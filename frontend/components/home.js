@@ -7,9 +7,9 @@ export class Home {
             <h1>Home</h1>
             <div>
                 <span>Counter: {{counter}}</span>
-                <button on-click="increment">Increment</button>
+                <button l-on-click="increment">Increment</button>
             </div>
-            <a style="cursor: pointer;" on-click="goTo('about')">Go to about page</a>
+            <a style="cursor: pointer;" l-on-click="goTo('about')">Go to about page</a>
         </div>
     `;
 

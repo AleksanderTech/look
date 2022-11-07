@@ -5,7 +5,7 @@ export class About {
     template = `
         <div style="border: 4px dashed blue; padding: 1rem;">
             <h1>About</h1>
-            <a style="cursor: pointer;" on-click="goTo('home')">Go to home page</a>
+            <a style="cursor: pointer;" l-on-click="goTo('home')">Go to home page</a>
         </div>    
     `;
 
