@@ -1,5 +1,8 @@
 {
-  "name": "server",
+  "name": "look.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2"
   }
