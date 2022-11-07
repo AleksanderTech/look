@@ -5,7 +5,8 @@ export class Home {
     template = `
         <div style="border: 4px dashed black; padding: 1rem;">
             <h1>Home</h1>
-            <div>
+            <button style="display: block" l-on-click="toggleCounterVisibility()">Hide/Show counter</button>
+            <div l-if="showCounter">
                 <span>Counter: {{counter}}</span>
                 <button l-on-click="increment">Increment</button>
             </div>
@@ -14,7 +15,12 @@ export class Home {
     `;
 
     data = {
+        showCounter: true,
         counter: 0,
+    }
+
+    toggleCounterVisibility() {
+        this.data.showCounter = !this.data.showCounter;
     }
 
     goTo(path) {
